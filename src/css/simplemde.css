@@ -128,6 +128,12 @@
     cursor: pointer;
 }
 
+.editor-toolbar a.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .editor-toolbar a.active,
 .editor-toolbar a:hover {
     background: #fcfcfc;
