@@ -1075,16 +1075,18 @@ var toolbarBuiltInButtons = {
 	"bold": {
 		name: "bold",
 		action: toggleBold,
-		className: "fa fa-bold",
+		className: "icon",
 		title: "Bold",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bold"><path d="M6 12h9a4 4 0 0 1 0 8H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a4 4 0 0 1 0 8"/></svg>`
 	},
 	"italic": {
 		name: "italic",
 		action: toggleItalic,
-		className: "fa fa-italic",
+		className: "icon",
 		title: "Italic",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-italic"><line x1="19" x2="10" y1="4" y2="4"/><line x1="14" x2="5" y1="20" y2="20"/><line x1="15" x2="9" y1="4" y2="20"/></svg>`
 	},
 	"strikethrough": {
 		name: "strikethrough",
@@ -1095,9 +1097,10 @@ var toolbarBuiltInButtons = {
 	"heading": {
 		name: "heading",
 		action: toggleHeadingSmaller,
-		className: "fa fa-header",
+		className: "icon",
 		title: "Heading",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heading"><path d="M6 12h12"/><path d="M6 20V4"/><path d="M18 20V4"/></svg>`
 	},
 	"heading-smaller": {
 		name: "heading-smaller",
@@ -1141,23 +1144,26 @@ var toolbarBuiltInButtons = {
 	"quote": {
 		name: "quote",
 		action: toggleBlockquote,
-		className: "fa fa-quote-left",
+		className: "quote",
 		title: "Quote",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>`
 	},
 	"unordered-list": {
 		name: "unordered-list",
 		action: toggleUnorderedList,
-		className: "fa fa-list-ul",
+		className: "icon",
 		title: "Generic List",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>`
 	},
 	"ordered-list": {
 		name: "ordered-list",
 		action: toggleOrderedList,
-		className: "fa fa-list-ol",
+		className: "icon",
 		title: "Numbered List",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-ordered"><line x1="10" x2="21" y1="6" y2="6"/><line x1="10" x2="21" y1="12" y2="12"/><line x1="10" x2="21" y1="18" y2="18"/><path d="M4 6h1v4"/><path d="M4 10h2"/><path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>`
 	},
 	"clean-block": {
 		name: "clean-block",
@@ -1171,16 +1177,18 @@ var toolbarBuiltInButtons = {
 	"link": {
 		name: "link",
 		action: drawLink,
-		className: "fa fa-link",
+		className: "icon",
 		title: "Create Link",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`
 	},
 	"image": {
 		name: "image",
 		action: drawImage,
-		className: "fa fa-picture-o",
+		className: "icon",
 		title: "Insert Image",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>`
 	},
 	"table": {
 		name: "table",
@@ -1200,23 +1208,26 @@ var toolbarBuiltInButtons = {
 	"preview": {
 		name: "preview",
 		action: togglePreview,
-		className: "fa fa-eye no-disable",
+		className: "icon",
 		title: "Toggle Preview",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>`
 	},
 	"side-by-side": {
 		name: "side-by-side",
 		action: toggleSideBySide,
-		className: "fa fa-columns no-disable no-mobile",
+		className: "icon",
 		title: "Toggle Side by Side",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-columns-2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 3v18"/></svg>`
 	},
 	"fullscreen": {
 		name: "fullscreen",
 		action: toggleFullScreen,
-		className: "fa fa-arrows-alt no-disable no-mobile",
+		className: "icon",
 		title: "Toggle Fullscreen",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fullscreen"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><rect width="10" height="8" x="7" y="8" rx="1"/></svg>`
 	},
 	"separator-4": {
 		name: "separator-4"
@@ -1224,9 +1235,10 @@ var toolbarBuiltInButtons = {
 	"guide": {
 		name: "guide",
 		action: "https://simplemde.com/markdown-guide",
-		className: "fa fa-question-circle",
+		className: "icon",
 		title: "Markdown Guide",
-		default: true
+		default: true,
+		icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>`
 	},
 	"separator-5": {
 		name: "separator-5"
