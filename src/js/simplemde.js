@@ -110,6 +110,11 @@ function createIcon(options, enableTooltips, shortcuts) {
 
 	el.tabIndex = -1;
 	el.className = options.className;
+	if (options.icon != null) {
+		const icon = document.createElement('span');
+		icon.innerHTML = options.icon.trim();
+		el.append(icon.firstChild);
+	}
 	return el;
 }
 
